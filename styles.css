@@ -1,0 +1,304 @@
+:root{
+    --text-color: #1a1c20;
+    --link-color: #4a76ee;
+    --background-color: #eeeff1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #c7bebe;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 70px;
+}
+    nav .left a{
+        color: var(--text-color);
+        font-size: 23px;
+        font-weight: 600;
+    }
+    nav .right a{
+        color: var(--text-color);
+        margin: 10px;
+    }
+
+
+@media (max-width:850px){
+    .Introduction .text h1{
+        font-size: 20px;
+    }
+}
+@media (max-width:750px){
+    .Introduction{
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width:750px){
+    .Introduction .image img{
+        width: 200px;
+    }
+}
+@media (max-width: 600px) {
+    nav .right a{
+        font-size: 20px;
+    }
+    nav .right a span {
+        display: none;
+    }
+
+    .Introduction {
+        padding: 0 20px;
+    }
+    .Introduction .text h2 {
+        font-size: 30px;
+    }
+
+    .skills {
+        padding: 0 20px;
+    }
+    .skills .text .logos .logo span{
+        font-size: 16px;
+    }
+}
+
+
+.Introduction{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 70px;
+    gap: 50px;
+}
+    .Introduction .text {
+        flex: 6;
+    }
+    .Introduction .text h1{
+            font-size: 35px;
+    }
+    .Introduction .text .links a{
+        display: inline-block;
+        padding: 3px 5px;
+        border: 2px solid #4a76ee;
+        border-radius: 5px;
+        margin: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .Introduction .text .links a:hover {
+        color: var(--text-color);
+        border: 2px solid var(--text-color);
+    }
+    .Introduction .text .links {
+        margin-top: 10px;
+    }
+    .Introduction .image {
+        flex: 2;
+        display: flex;
+        justify-content: right;
+    }
+    .Introduction .image img{
+        border-radius: 50%;
+    }
+
+
+.skills{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+    .skills h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .skills .detail {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .skills .logos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .skills .logos .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        width: 150px;
+        padding: 10px 15px;
+        margin: 10px;
+        border: 1.5px solid var(--text-color);
+        border-radius: 5px;
+    }
+    .skills .logos .logo img{
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+        border-radius: 2px;
+    }
+    .skills .logos .logo span {
+        font-size: 17px;
+    }
+
+
+.education-qualifications{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+    .education-qualifications h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .education-qualifications .education1 {
+        padding: 50px 50px;
+        align-items: center;
+        display: flex;
+    }
+    .education-qualifications .education1 .school-logo {
+        width: 50px; /* Adjust the size as needed */
+        height: auto;
+        margin-right: 15px;
+    }
+    .education-qualifications .school-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .education-qualifications .education1 .sangathan-name {
+        font-weight: bold;
+        font-size: 1.2em; /* Adjust font size as needed */
+    }
+    .education-qualifications .education1 .school-name {
+        font-weight: 400;
+        font-size: 1em; /* Adjust font size as needed */
+        color: grey;
+    }
+    .education-qualifications .education1 .passing-year {
+        font-size: 0.9em; /* Adjust font size as needed */
+        color: grey;
+    }
+
+    .education-qualifications .education2 {
+        padding: 0 50px;
+        align-items: center;
+        display: flex;
+    }
+    .education-qualifications .education2 .college-logo {
+        width: 50px; /* Adjust the size as needed */
+        height: auto;
+        margin-right: 15px;
+    }
+    .education-qualifications .college-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .education-qualifications .education2 .University-name {
+        font-weight: bold;
+        font-size: 1.2em; /* Adjust font size as needed */
+    }
+    .education-qualifications .education2 .college-name {
+        font-weight: 400;
+        font-size: 1em; /* Adjust font size as needed */
+        color: grey;
+    }
+    .education-qualifications .education2 .passing-year {
+        font-size: 0.9em; /* Adjust font size as needed */
+        color: grey;
+    }
+
+
+
+    .contact{
+        padding: 0 50px;
+        margin-bottom: 100px;
+    }
+        .contact h2 {
+            text-align: center;
+            font-size: 30px;
+        }
+        .contact .icons {
+            display: flex;
+            justify-content: center;
+        } 
+        .contact .icons .icon a{
+            display: inline-block;
+            padding: 3px 5px;
+            border: 2px solid #4a76ee;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .contact .icons .icon a:hover {
+            color: var(--text-color);
+            border: 2px solid var(--text-color);
+        }
+
+
+
+.message{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.message h2 {
+    text-align: center;
+    font-size: 30px;
+}
+.feedback-form-container {
+    background-color: #d3d3d3; /* Light grey background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+.feedback-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.feedback-form input,
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.feedback-form button {
+    width: 100%;
+    background-color: #b96a6a; /* Green button */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feedback-form button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+
