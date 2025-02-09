@@ -16,7 +16,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #c7bebe;
+    background-color: #f4dede;
 }
 
 a {
@@ -99,7 +99,7 @@ nav{
     .Introduction .text .links a{
         display: inline-block;
         padding: 3px 5px;
-        border: 2px solid #4a76ee;
+        border: 2px solid #2b5fed;
         border-radius: 5px;
         margin: 10px;
         margin-bottom: 10px;
@@ -263,7 +263,7 @@ nav{
     font-size: 30px;
 }
 .feedback-form-container {
-    background-color: #d3d3d3; /* Light grey background */
+    background-color: #fcd1d1; /* Light red background */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -286,8 +286,8 @@ nav{
 }
 .feedback-form button {
     width: 100%;
-    background-color: #b96a6a; /* Green button */
-    color: white;
+    background-color: #ab5e5e; /* light red button */
+    color: rgb(255, 255, 255);
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -297,7 +297,7 @@ nav{
 }
 
 .feedback-form button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #790d0d; /* Darker red on hover */
 }
 
 
